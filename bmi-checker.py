@@ -52,6 +52,9 @@ def bmi_chart():
 #algorithm
 bmi_chart()
 
-a = float(input("What is your weight :"))
-b = float(input("What is your height :"))
-bmi(b, a)
+try :
+    a = float(input("What is your weight :"))
+    b = float(input("What is your height :"))
+    bmi(b, a)
+except:
+    print("Input should be a number!")
