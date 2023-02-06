@@ -58,3 +58,5 @@ try :
     bmi(b, a)
 except:
     print("Input should be a number!")
+finally:
+    print("THANK YOU FOR USING OUR SSERVICE!")
