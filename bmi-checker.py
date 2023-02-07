@@ -15,18 +15,18 @@ def bmi(height, weight):
 def bmi_result(result):
     res = round(result, 2)
     r = res
+    status = ""
     if r <= 18.4:
-        print(str(r) + " kg/m2")
-        print("Your result : Underweight")
+        status = "Underweight"
     elif r >= 18.5 and r <= 24.9:
-        print(str(r) + " kg/m2")
-        print("Your result : Normal")
+        status = "Normal"
     elif r >= 25.0 and r <= 39.9:
-        print(str(r) + " kg/m2")
-        print("Your result : Overweight")
+        status = "Overweight"
     else:
-        print(str(r) + " kg/m2")
-        print("Your result : Obese")
+        status = "Obese"
+
+    print(str(r) + " kg/m2")
+    print("Your result : " + status)
 
 
 #BMI Chart
